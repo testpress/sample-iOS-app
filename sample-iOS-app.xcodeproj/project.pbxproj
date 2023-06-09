@@ -13,6 +13,7 @@
 		03FFE4842A331CED00A4EBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4822A331CED00A4EBEC /* Main.storyboard */; };
 		03FFE4862A331CF200A4EBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4852A331CF200A4EBEC /* Assets.xcassets */; };
 		03FFE4892A331CF200A4EBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4872A331CF200A4EBEC /* LaunchScreen.storyboard */; };
+		03FFE49D2A3330A600A4EBEC /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FFE49D2A3330A600A4EBEC /* TPStreamsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "sample-iOS-app";
+			packageProductDependencies = (
+				03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */,
+			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 03FFE4702A331CED00A4EBEC;
+			packageReferences = (
+				03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
+			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
+			productName = TPStreamsSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03FFE4712A331CED00A4EBEC /* Project object */;
 }
