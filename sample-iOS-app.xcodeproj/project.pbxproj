@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0326BAE42A384D7B009ABC58 /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0326BAE32A384D7B009ABC58 /* TPStreamsSDK */; };
 		03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */; };
 		03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */; };
 		03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE4802A331CED00A4EBEC /* ViewController.swift */; };
 		03FFE4842A331CED00A4EBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4822A331CED00A4EBEC /* Main.storyboard */; };
 		03FFE4862A331CF200A4EBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4852A331CF200A4EBEC /* Assets.xcassets */; };
 		03FFE4892A331CF200A4EBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4872A331CF200A4EBEC /* LaunchScreen.storyboard */; };
-		03FFE49D2A3330A600A4EBEC /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FFE49D2A3330A600A4EBEC /* TPStreamsSDK in Frameworks */,
+				0326BAE42A384D7B009ABC58 /* TPStreamsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = "sample-iOS-app";
 			packageProductDependencies = (
-				03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */,
+				0326BAE32A384D7B009ABC58 /* TPStreamsSDK */,
 			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 03FFE4702A331CED00A4EBEC;
 			packageReferences = (
-				03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
+				0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
 			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
@@ -370,20 +370,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
+		0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		03FFE49C2A3330A600A4EBEC /* TPStreamsSDK */ = {
+		0326BAE32A384D7B009ABC58 /* TPStreamsSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03FFE49B2A3330A600A4EBEC /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
+			package = 0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
 			productName = TPStreamsSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
