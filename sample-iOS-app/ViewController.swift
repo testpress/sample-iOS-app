@@ -16,10 +16,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playerContainer.removeFromSuperview()
         
         let playerView = UIHostingController(rootView: TPStreamPlayerView(player: player))
-        playerView.view.frame = playerContainer.frame
+        playerView.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 280)
         view.addSubview(playerView.view)
     }
     

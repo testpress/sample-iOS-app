@@ -17,19 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7b-ql-isS">
-                                <rect key="frame" x="393" y="136" width="0.0" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="2eX-E6-0Vh"/>
-                                    <constraint firstAttribute="width" id="5So-4C-dgn"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrY-5T-Bpz">
-                                <rect key="frame" x="0.0" y="47" width="393" height="240"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-U3-I0s">
                                 <rect key="frame" x="168" y="392" width="56" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -41,21 +28,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="3H7-uU-Euk"/>
+                        <viewLayoutGuide key="safeArea" id="N0U-8N-MGc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.79976370510000006" green="0.92670973639999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerY" secondItem="3H7-uU-Euk" secondAttribute="centerY" id="0bc-Hc-Qzq"/>
-                            <constraint firstItem="3H7-uU-Euk" firstAttribute="top" secondItem="nrY-5T-Bpz" secondAttribute="top" constant="12" id="O5K-lE-Sfj"/>
-                            <constraint firstAttribute="trailing" secondItem="nrY-5T-Bpz" secondAttribute="trailing" id="OTv-hf-aR0"/>
-                            <constraint firstItem="nrY-5T-Bpz" firstAttribute="leading" secondItem="0Zg-zq-Dmh" secondAttribute="leading" id="awo-el-XU8"/>
-                            <constraint firstItem="3H7-uU-Euk" firstAttribute="trailing" secondItem="V7b-ql-isS" secondAttribute="trailing" id="obg-kM-P3p"/>
-                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerX" secondItem="3H7-uU-Euk" secondAttribute="centerX" id="vsJ-9s-oCj"/>
+                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerY" secondItem="0Zg-zq-Dmh" secondAttribute="centerY" id="0bc-Hc-Qzq"/>
+                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerX" secondItem="N0U-8N-MGc" secondAttribute="centerX" id="vsJ-9s-oCj"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="playerContainer" destination="nrY-5T-Bpz" id="UfL-F2-GRC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,9 +45,6 @@
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
