@@ -17,9 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let playerView = UIHostingController(rootView: TPStreamPlayerView(player: player))
-        playerView.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 280)
-        view.addSubview(playerView.view)
+        let controller = UIHostingController(rootView: TPStreamPlayerView(player: player))
+        controller.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 280)
+        addChild(controller)
+        view.addSubview(controller.view)
+        controller.didMove(toParent: self)
     }
     
     @IBAction func togglePlay(_ sender: UIButton) {
