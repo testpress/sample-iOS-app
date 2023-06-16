@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0326BAE42A384D7B009ABC58 /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0326BAE32A384D7B009ABC58 /* TPStreamsSDK */; };
+		0381064D2A3BFCA1005B107F /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0381064C2A3BFCA1005B107F /* TPStreamsSDK */; };
 		03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */; };
 		03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */; };
 		03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE4802A331CED00A4EBEC /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0326BAE42A384D7B009ABC58 /* TPStreamsSDK in Frameworks */,
+				0381064D2A3BFCA1005B107F /* TPStreamsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = "sample-iOS-app";
 			packageProductDependencies = (
-				0326BAE32A384D7B009ABC58 /* TPStreamsSDK */,
+				0381064C2A3BFCA1005B107F /* TPStreamsSDK */,
 			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 03FFE4702A331CED00A4EBEC;
 			packageReferences = (
-				0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
+				0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
 			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
@@ -370,9 +370,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
+		0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
+			repositoryURL = "https://github.com/testpress/iOSPlayerSDK";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -381,9 +381,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0326BAE32A384D7B009ABC58 /* TPStreamsSDK */ = {
+		0381064C2A3BFCA1005B107F /* TPStreamsSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0326BAE22A384D7B009ABC58 /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
+			package = 0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
 			productName = TPStreamsSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
