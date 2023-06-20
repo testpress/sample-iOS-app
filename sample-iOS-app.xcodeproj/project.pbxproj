@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0381064D2A3BFCA1005B107F /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0381064C2A3BFCA1005B107F /* TPStreamsSDK */; };
+		036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 036654D02A3DE8BC0005BDDF /* TPStreamsSDK */; };
 		03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */; };
 		03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */; };
 		03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE4802A331CED00A4EBEC /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0381064D2A3BFCA1005B107F /* TPStreamsSDK in Frameworks */,
+				036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = "sample-iOS-app";
 			packageProductDependencies = (
-				0381064C2A3BFCA1005B107F /* TPStreamsSDK */,
+				036654D02A3DE8BC0005BDDF /* TPStreamsSDK */,
 			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 03FFE4702A331CED00A4EBEC;
 			packageReferences = (
-				0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
+				036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
 			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
@@ -301,8 +301,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,8 +331,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,9 +372,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
+		036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/testpress/iOSPlayerSDK";
+			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -381,9 +383,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0381064C2A3BFCA1005B107F /* TPStreamsSDK */ = {
+		036654D02A3DE8BC0005BDDF /* TPStreamsSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0381064B2A3BFCA1005B107F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
+			package = 036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
 			productName = TPStreamsSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
