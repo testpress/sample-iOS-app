@@ -8,32 +8,28 @@
 import UIKit
 import SwiftUI
 import TPStreamsSDK
+import AVKit
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var playerContainer: UIView!
-    let player = TPAVPlayer(assetID: "8eaHZjXt6km", accessToken: "16b608ba-9979-45a0-94fb-b27c1a86b3c1")
-    var hostingController: UIViewController?
+    var player: TPAVPlayer!
+    var playerViewController: AVPlayerViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupHostingController()
+        setupPlayerView()
+        player?.play()
     }
     
-    private func setupHostingController() {
-        hostingController = UIHostingController(rootView: TPStreamPlayerView(player: player))
-        hostingController!.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 280)
-        addChild(hostingController!)
-        view.addSubview(hostingController!.view)
-        hostingController!.didMove(toParent: self)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        if UIDevice.current.orientation.isLandscape {
-            self.hostingController?.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        } else {
-            self.hostingController?.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 280)
-        }
+    func setupPlayerView(){
+        player = TPAVPlayer(assetID: "8eaHZjXt6km", accessToken: "16b608ba-9979-45a0-94fb-b27c1a86b3c1")
+        playerViewController = AVPlayerViewController()
+        playerViewController?.player = player
+
+        addChild(playerViewController!)
+        playerContainer.addSubview(playerViewController!.view)
+        playerViewController!.view.frame = playerContainer.bounds
     }
     
     @IBAction func togglePlay(_ sender: UIButton) {

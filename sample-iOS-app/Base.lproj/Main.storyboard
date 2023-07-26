@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-U3-I0s">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-U3-I0s">
                                 <rect key="frame" x="168" y="392" width="56" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play">
                                     <color key="baseBackgroundColor" systemColor="linkColor"/>
@@ -27,15 +28,27 @@
                                     <action selector="togglePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FWP-7d-FVR"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zU-Oz-JU0">
+                                <rect key="frame" x="0.0" y="94" width="393" height="230"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="h84-hC-Gcu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N0U-8N-MGc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.79976370510000006" green="0.92670973639999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerY" secondItem="0Zg-zq-Dmh" secondAttribute="centerY" id="0bc-Hc-Qzq"/>
-                            <constraint firstItem="oaN-U3-I0s" firstAttribute="centerX" secondItem="N0U-8N-MGc" secondAttribute="centerX" id="vsJ-9s-oCj"/>
+                            <constraint firstItem="6zU-Oz-JU0" firstAttribute="leading" secondItem="N0U-8N-MGc" secondAttribute="leading" id="5yE-7f-dAB"/>
+                            <constraint firstItem="N0U-8N-MGc" firstAttribute="trailing" secondItem="6zU-Oz-JU0" secondAttribute="trailing" id="AsZ-JP-fWo"/>
+                            <constraint firstItem="6zU-Oz-JU0" firstAttribute="top" secondItem="N0U-8N-MGc" secondAttribute="top" id="ZQt-vo-9Np"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerContainer" destination="6zU-Oz-JU0" id="6dU-lb-Nli"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
