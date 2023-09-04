@@ -376,8 +376,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
 			requirement = {
-				branch = "add-sample-app-with-storyboard";
-				kind = branch;
+				kind = exactVersion;
+				version = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
