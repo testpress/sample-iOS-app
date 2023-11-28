@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         player = TPAVPlayer(assetID: "8eaHZjXt6km", accessToken: "16b608ba-9979-45a0-94fb-b27c1a86b3c1")
         playerViewController = TPStreamPlayerViewController()
         playerViewController?.player = player
+        playerViewController!.delegate = self
 
         addChild(playerViewController!)
         playerContainer.addSubview(playerViewController!.view)
@@ -40,6 +41,24 @@ class ViewController: UIViewController {
             player.play()
             sender.setTitle("Pause", for: .normal)
         }
+    }
+}
+
+extension ViewController: TPStreamPlayerViewControllerDelegate {
+    func willEnterFullScreenMode() {
+        print("willEnterFullScreenMode")
+    }
+    
+    func didEnterFullScreenMode() {
+        print("didEnterFullScreenMode")
+    }
+    
+    func willExitFullScreenMode() {
+        print("willExitFullScreenMode")
+    }
+    
+    func didExitFullScreenMode() {
+        print("didExitFullScreenMode")
     }
 }
 
