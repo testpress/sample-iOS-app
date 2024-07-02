@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 036654D02A3DE8BC0005BDDF /* TPStreamsSDK */; };
+		03B34C1F2C341BEB0095592F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 03B34C1E2C341BEB0095592F /* Sentry */; };
+		03B34C212C341BEB0095592F /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B34C202C341BEB0095592F /* SentrySwiftUI */; };
 		03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */; };
 		03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */; };
 		03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE4802A331CED00A4EBEC /* ViewController.swift */; };
@@ -33,6 +35,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */,
+				03B34C212C341BEB0095592F /* SentrySwiftUI in Frameworks */,
+				03B34C1F2C341BEB0095592F /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,8 @@
 			name = "sample-iOS-app";
 			packageProductDependencies = (
 				036654D02A3DE8BC0005BDDF /* TPStreamsSDK */,
+				03B34C1E2C341BEB0095592F /* Sentry */,
+				03B34C202C341BEB0095592F /* SentrySwiftUI */,
 			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
@@ -118,6 +124,7 @@
 			mainGroup = 03FFE4702A331CED00A4EBEC;
 			packageReferences = (
 				036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
+				03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
 			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
@@ -377,7 +384,15 @@
 			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.5;
+				version = 1.1.6;
+			};
+		};
+		03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = exactVersion;
+				version = 8.16.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -387,6 +402,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
 			productName = TPStreamsSDK;
+		};
+		03B34C1E2C341BEB0095592F /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		03B34C202C341BEB0095592F /* SentrySwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = SentrySwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
