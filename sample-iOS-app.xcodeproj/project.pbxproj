@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 036654D02A3DE8BC0005BDDF /* TPStreamsSDK */; };
-		03B34C1F2C341BEB0095592F /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 03B34C1E2C341BEB0095592F /* Sentry */; };
-		03B34C212C341BEB0095592F /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B34C202C341BEB0095592F /* SentrySwiftUI */; };
 		03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */; };
 		03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */; };
-		03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFE4802A331CED00A4EBEC /* ViewController.swift */; };
 		03FFE4842A331CED00A4EBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4822A331CED00A4EBEC /* Main.storyboard */; };
 		03FFE4862A331CF200A4EBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4852A331CF200A4EBEC /* Assets.xcassets */; };
 		03FFE4892A331CF200A4EBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FFE4872A331CF200A4EBEC /* LaunchScreen.storyboard */; };
+		D9CCCA5F2CF74B3100B60B0F /* TPStreamsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D9CCCA5E2CF74B3100B60B0F /* TPStreamsSDK */; };
+		D9CCCA612CF74BF600B60B0F /* AppDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCCA602CF74BF600B60B0F /* AppDownloadManager.swift */; };
+		D9CCCA632CF74C1700B60B0F /* DownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCCA622CF74C1700B60B0F /* DownloadListViewController.swift */; };
+		D9CCCA652CF74D1400B60B0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCCA642CF74D1400B60B0F /* MainViewController.swift */; };
+		D9CCCA672CF74D4C00B60B0F /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCCA662CF74D4C00B60B0F /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-iOS-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03FFE4802A331CED00A4EBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03FFE4832A331CED00A4EBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03FFE4852A331CF200A4EBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03FFE4882A331CF200A4EBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03FFE48A2A331CF200A4EBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CCCA602CF74BF600B60B0F /* AppDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDownloadManager.swift; sourceTree = "<group>"; };
+		D9CCCA622CF74C1700B60B0F /* DownloadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadListViewController.swift; sourceTree = "<group>"; };
+		D9CCCA642CF74D1400B60B0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D9CCCA662CF74D4C00B60B0F /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,9 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036654D12A3DE8BC0005BDDF /* TPStreamsSDK in Frameworks */,
-				03B34C212C341BEB0095592F /* SentrySwiftUI in Frameworks */,
-				03B34C1F2C341BEB0095592F /* Sentry in Frameworks */,
+				D9CCCA5F2CF74B3100B60B0F /* TPStreamsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,11 +66,14 @@
 			children = (
 				03FFE47C2A331CED00A4EBEC /* AppDelegate.swift */,
 				03FFE47E2A331CED00A4EBEC /* SceneDelegate.swift */,
-				03FFE4802A331CED00A4EBEC /* ViewController.swift */,
 				03FFE4822A331CED00A4EBEC /* Main.storyboard */,
 				03FFE4852A331CF200A4EBEC /* Assets.xcassets */,
 				03FFE4872A331CF200A4EBEC /* LaunchScreen.storyboard */,
 				03FFE48A2A331CF200A4EBEC /* Info.plist */,
+				D9CCCA602CF74BF600B60B0F /* AppDownloadManager.swift */,
+				D9CCCA622CF74C1700B60B0F /* DownloadListViewController.swift */,
+				D9CCCA642CF74D1400B60B0F /* MainViewController.swift */,
+				D9CCCA662CF74D4C00B60B0F /* PlayerViewController.swift */,
 			);
 			path = "sample-iOS-app";
 			sourceTree = "<group>";
@@ -90,9 +95,7 @@
 			);
 			name = "sample-iOS-app";
 			packageProductDependencies = (
-				036654D02A3DE8BC0005BDDF /* TPStreamsSDK */,
-				03B34C1E2C341BEB0095592F /* Sentry */,
-				03B34C202C341BEB0095592F /* SentrySwiftUI */,
+				D9CCCA5E2CF74B3100B60B0F /* TPStreamsSDK */,
 			);
 			productName = "sample-iOS-app";
 			productReference = 03FFE4792A331CED00A4EBEC /* sample-iOS-app.app */;
@@ -123,8 +126,7 @@
 			);
 			mainGroup = 03FFE4702A331CED00A4EBEC;
 			packageReferences = (
-				036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
-				03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				D9CCCA5D2CF74B3100B60B0F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */,
 			);
 			productRefGroup = 03FFE47A2A331CED00A4EBEC /* Products */;
 			projectDirPath = "";
@@ -153,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FFE4812A331CED00A4EBEC /* ViewController.swift in Sources */,
 				03FFE47D2A331CED00A4EBEC /* AppDelegate.swift in Sources */,
+				D9CCCA632CF74C1700B60B0F /* DownloadListViewController.swift in Sources */,
+				D9CCCA672CF74D4C00B60B0F /* PlayerViewController.swift in Sources */,
+				D9CCCA652CF74D1400B60B0F /* MainViewController.swift in Sources */,
 				03FFE47F2A331CED00A4EBEC /* SceneDelegate.swift in Sources */,
+				D9CCCA612CF74BF600B60B0F /* AppDownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +316,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +346,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,39 +384,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
+		D9CCCA5D2CF74B3100B60B0F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/testpress/iOSPlayerSDK/";
+			repositoryURL = "https://github.com/testpress/iOSPlayerSDK";
 			requirement = {
 				kind = exactVersion;
-				version = 1.1.6;
-			};
-		};
-		03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
-			requirement = {
-				kind = exactVersion;
-				version = 8.16.1;
+				version = 1.1.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		036654D02A3DE8BC0005BDDF /* TPStreamsSDK */ = {
+		D9CCCA5E2CF74B3100B60B0F /* TPStreamsSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 036654CF2A3DE8BC0005BDDF /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
+			package = D9CCCA5D2CF74B3100B60B0F /* XCRemoteSwiftPackageReference "iOSPlayerSDK" */;
 			productName = TPStreamsSDK;
-		};
-		03B34C1E2C341BEB0095592F /* Sentry */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
-			productName = Sentry;
-		};
-		03B34C202C341BEB0095592F /* SentrySwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03B34C1D2C341BEB0095592F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
-			productName = SentrySwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
